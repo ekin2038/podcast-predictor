@@ -124,7 +124,7 @@ def fetch_itunes_category(podcast_name):
             return "Unknown"
         return results[0].get("primaryGenreName", "Unknown")
     except Exception as e:
-        print(" Error fetching category for "+podcast_name+e)
+        print(" Error fetching category for "+podcast_name+str(e))
         return "Unknown"
     
 for name in podcast_list:

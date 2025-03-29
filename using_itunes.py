@@ -178,7 +178,7 @@ def save_to_json(podcast_name, metadata, episodes):
 
 
 # Load data
-with open("all.json", "r", encoding="utf-8") as f:
+with open("all_podcasts_episodes.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Use the order they appear in the JSON file
